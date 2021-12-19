@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Pickwick</title>
+    <meta name="description" content="Pickwick company - contact">
     <link rel="stylesheet" href="css/style.css">
     <style>
         @import url("https://use.typekit.net/mjh0xoq.css");
     </style>
+    <script src="https://kit.fontawesome.com/ae80116eb9.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/favicon.ico" type="img/favicon.ico"/>
 </head>
 <body>
     <header>
@@ -28,7 +31,73 @@
         </label>
     </header>
     <main class="main-contact">
-
+        <h1 class="contact-heading">Contact</h1>
+        <div class="contact-firstsection">
+            <div class="contact-first-container">
+                <div class="contact-icon-container">
+                    <a href="tel:+4512345678"><img src="img/phone-call.png" alt="Phone Icon" class="contacticon"></a>
+                </div>
+                <div class="contact-text-container">
+                    <h2 class="contacttext-info"><a href="tel:+4512345678" class="contact-href">+45 80 88 35 21</a></h2>
+                </div>
+            </div>
+            <div class="contact-first-container">
+                <div class="contact-icon-container">
+                    <a href="mailto:pickwick@contact.com"><img src="img/email.png" alt="Email Icon" class="contacticon"></a>
+                </div>
+                <div class="contact-text-container">
+                    <h2 class="contacttext-info"><a href="mailto:pickwick@contact.com" class="contact-href">pickwick@contact.com</a></h2>
+                </div>
+            </div>
+            <div class="contact-first-container">
+                <div class="contact-icon-container">
+                    <a href="#getmap"><img src="img/home.png" alt="Home Icon" class="contacticon" id="home"></a>
+                </div>
+                <div class="contact-text-container">
+                    <a href="#getmap" class="contact-href"><address class="contacttext-info">
+                        Oosterdoksstraat 80<br>
+                        1011 DK, Amsterdam<br>
+                        The Netherlands
+                    </address></a>
+                </div>
+            </div>
+        </div>
+        <h1 class="contact-heading">FAQ</h1>
+        <div class="accordion-container-main" id="accordion-contact">
+            <section class="accordion" id="accordion-first">
+                <input type="checkbox" name="collapse" id="handle1" checked="checked">
+                <h2 class="handle">
+                  <label for="handle1" class="accordion-label-style">The package is not coming, what should I do?</label>
+                </h2>
+                <div class="content">
+                  <p class="accordion-content-text">Firstly, check your email inbox, especially the spam folder. There might be an email that covers the explanation of the delay.</p>
+                  <p class="accordion-content-text">Secondly, contact the delivery company. They might have done a mistake or they are the cause of the issue.</p>
+                  <p class="accordion-content-text">Lastly, you can contact us anytime via mail or phone and we will solve this problem with you.</p>
+                </div>
+              </section>
+              <section class="accordion">
+                <input type="checkbox" name="collapse2" id="handle2">
+                <h2 class="handle">
+                  <label for="handle2" class="accordion-label-style">Are the product and the brand sustainable?</label>
+                </h2>
+                <div class="content">
+                    <p class="accordion-content-text">We have the membership of The Ethical Tea Partnership and always care about sustainability and the environment. You can read more about this <a href="about.html" id="faqlink">here</a>.</p>
+                </div>
+            </section>
+            <section class="accordion">
+                <input type="checkbox" name="collapse2" id="handle3">
+                <h2 class="handle">
+                  <label for="handle3" class="accordion-label-style">Photo contest: How will I know if I won?</label>
+                </h2>
+                <div class="content">
+                    <p class="accordion-content-text">A day after the deadline, 2nd February 2022 at 12:00 winners of our contest will be announced on the subpage “Photo contest”. Moreover, we will inform about the results on our social media and winners will be notified personally by mail.</p>
+                </div>
+            </section>
+        </div>
+        <h1 class="contact-heading" id="getmap">Map</h1>
+        <div class="gmap-canvas">
+            <iframe id="gmap-canvas" src="https://maps.google.com/maps?q=Oosterdoksstraat%2080%201011%20DK,%20Amsterdam%20The%20Netherlands%20&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
     </main>
     <footer>
         <div class="footersection1">
@@ -40,7 +109,7 @@
                     <img src="img/phone-call.png" alt="phone" class="footer-contactpicture">
                 </div>
                 <div class="contact-container-text">
-                    <p class="footer-contact-text">+ 45 12 34 56 78</p>
+                    <a href="tel:+4512345678" class="contact-href-footer"><p class="footer-contact-text">+45 80 88 35 21</p></a>
                 </div>
             </div>
             <div class="contact-container">
@@ -48,7 +117,7 @@
                     <img src="img/email.png" alt="email" class="footer-contactpicture">
                 </div>
                 <div class="contact-container-text">
-                    <p class="footer-contact-text">pickwicktea@contact.com</p>
+                    <a href="mailto:pickwick@contact.com" class="contact-href-footer"><p class="footer-contact-text">pickwicktea@contact.com</p></a>
                 </div>
             </div>
         </div>
@@ -61,10 +130,10 @@
                     <a href="https://youtube.com"><img src="img/ytblck.png" alt="youtube" class="footer-somepicture"></a>
                 </div>
                 <div class="footer-some" id="middlesome">
-                    <a href="https://instagram.com"><img src="img/instablck.png" alt="instagram" class="footer-somepicture"></a>
+                    <a href="https://www.instagram.com/pickwicknl/?hl=en"><img src="img/instablck.png" alt="instagram" class="footer-somepicture"></a>
                 </div>
                 <div class="footer-some">
-                    <a href="https://facebook.com"><img src="img/facebookblck.png" alt="youtube" class="footer-somepicture"></a>
+                    <a href="https://www.facebook.com/myteamoment.by.pickwick/"><img src="img/facebookblck.png" alt="youtube" class="footer-somepicture"></a>
                 </div>
             </div>
         </div>

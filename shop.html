@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buy now | Pickwick</title>
+    <meta name="description" content="Buy Pickwick Green Tea Lemon">
     <link rel="stylesheet" href="css/style.css">
     <style>
         @import url("https://use.typekit.net/mjh0xoq.css");
     </style>
+    <link rel="icon" href="img/favicon.ico" type="img/favicon.ico"/>
 </head>
-<body>
+<body class="shop-body">
     <header>
         <a href="index.html" class="logo"><img src="img/pickwick-logotransparent.png" alt="logo" class="logo"></a>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
@@ -27,8 +29,143 @@
             <span></span>
         </label>
     </header>
-    <main class="main-shop">
-
+    <main class="shop-main">
+        <div class="shop-white-background">
+            <div class="shop-white-section1">
+                <div class="shop-image-container">
+                    <img src="img/pickwickboxcomp.png" alt="Pickwick Green Tea Lemon Box" class="shop-pickwicktea">
+                </div>
+                <div class="tea-title-container">
+                    <h1 class="tea-title">Green Tea</h1>
+                    <h2 class="tea-subtitle">lemon</h2>
+                </div>
+            </div>
+            <div class="shop-white-section2">
+                <div class="amount-options-picker">
+                    <div class="picker-info-container">
+                        <h3 class="picker-info">Choose amount</h3>
+                    </div>
+                    <form>
+                        <select name="boxes" id="boxes" class="form">
+                          <option value="1box" class="option">1 box - 15 DKK</option>
+                          <option value="3boxes">3 boxes - 40 DKK</option>
+                          <option value="9boxes">9 boxes - 115 DKK</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="availability-container">
+                    <div class="availability-image">
+                        <img src="img/tick.png" class="tick" alt="available"> 
+                    </div>
+                    <div class="availability-text">
+                        <p class="tick-info">Available</p>
+                    </div>
+                </div>
+                <div class="stars-container">
+                    <div class="onestar-container">
+                        <img src="img/stargood.png" alt="rating star" class="rating-star">
+                    </div>
+                    <div class="onestar-container">
+                        <img src="img/stargood.png" alt="rating star" class="rating-star">
+                    </div>
+                    <div class="onestar-container">
+                        <img src="img/stargood.png" alt="rating star" class="rating-star">
+                    </div>
+                    <div class="onestar-container">
+                        <img src="img/stargood.png" alt="rating star" class="rating-star">
+                    </div>
+                    <div class="onestar-container">
+                        <img src="img/stargood.png" alt="rating star" class="rating-star">
+                    </div>
+                </div>
+                <div class="reviews-headline">
+                    <a href="https://www.amazon.com/Pickwick-Green-Tea-Lemon-20-Count/product-reviews/B00122E740" class="reviews">Reviews</a>
+                </div>
+                <div class="amount-options-picker">
+                    <div class="picker-info-container">
+                        <h3 class="picker-info">Choose shipping</h3>
+                    </div>
+                    <form>
+                        <select name="shipping" id="shipping" class="form">
+                          <option value="regular">Regular - 10 DKK</option>
+                          <option value="express">Express - 20 DKK</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="checkout-button">
+                    <button type="button" onclick="alert('Hello! This button will lead to the checkout in the future.')" id="button">Checkout</button>
+                </div>
+            </div>
+        </div>
+        <div class="shop-green">
+            <section class="amounts">
+                <h2 class="amounts-heading">Amount options</h2>
+                <div class="products-container">
+                    <div class="single-product">
+                        <div class="single-product-image">
+                            <img src="img/1box.png" alt="one box" class="product-image">
+                        </div>
+                        <div class="product-def">
+                            <h2 class="product-text1">1 box</h2>
+                        </div>
+                        <div class="product-price">
+                            <p class="product-text2">15 DKK</p>
+                        </div>
+                    </div>
+                    <div class="single-product">
+                        <div class="single-product-image">
+                            <img src="img/3boxes.png" alt="three boxes" class="product-image">
+                        </div>
+                        <div class="product-def">
+                            <h2 class="product-text1">3 boxes</h2>
+                        </div>
+                        <div class="product-price">
+                            <p class="product-text2">40 DKK</p>
+                        </div>
+                    </div>
+                    <div class="single-product">
+                        <div class="single-product-image">
+                            <img src="img/9boxes.png" alt="nine boxes" class="product-image">
+                        </div>
+                        <div class="product-def">
+                            <h2 class="product-text1">9 boxes</h2>
+                        </div>
+                        <div class="product-price">
+                            <p class="product-text2">115 DKK</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="accessories">
+                <h2 class="accessories-heading">Suggested accessories</h2>
+                <div class="products-container">
+                    <div class="single-product">
+                        <div class="single-product-image">
+                            <img src="img/strainer.jpg" alt="strainer" class="product-image">
+                        </div>
+                        <div class="product-def">
+                            <h2 class="product-text1">Strainer</h2>
+                        </div>
+                    </div>
+                    <div class="single-product">
+                        <div class="single-product-image">
+                            <img src="img/teapot.jpg" alt="teapot" class="product-image">
+                        </div>
+                        <div class="product-def">
+                            <h2 class="product-text1">Teapot</h2>
+                        </div>
+                    </div>
+                    <div class="single-product">
+                        <div class="single-product-image">
+                            <img src="img/honeyspoon.jpg" alt="honey spoon" class="product-image">
+                        </div>
+                        <div class="product-def">
+                            <h2 class="product-text1">Honey spoon</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="footersection1">
@@ -40,7 +177,7 @@
                     <img src="img/phone-call.png" alt="phone" class="footer-contactpicture">
                 </div>
                 <div class="contact-container-text">
-                    <p class="footer-contact-text">+ 45 12 34 56 78</p>
+                    <a href="tel:+4512345678" class="contact-href-footer"><p class="footer-contact-text">+45 80 88 35 21</p></a>
                 </div>
             </div>
             <div class="contact-container">
@@ -48,7 +185,7 @@
                     <img src="img/email.png" alt="email" class="footer-contactpicture">
                 </div>
                 <div class="contact-container-text">
-                    <p class="footer-contact-text">pickwicktea@contact.com</p>
+                    <a href="mailto:pickwick@contact.com" class="contact-href-footer"><p class="footer-contact-text">pickwicktea@contact.com</p></a>
                 </div>
             </div>
         </div>
@@ -61,10 +198,10 @@
                     <a href="https://youtube.com"><img src="img/ytblck.png" alt="youtube" class="footer-somepicture"></a>
                 </div>
                 <div class="footer-some" id="middlesome">
-                    <a href="https://instagram.com"><img src="img/instablck.png" alt="instagram" class="footer-somepicture"></a>
+                    <a href="https://www.instagram.com/pickwicknl/?hl=en"><img src="img/instablck.png" alt="instagram" class="footer-somepicture"></a>
                 </div>
                 <div class="footer-some">
-                    <a href="https://facebook.com"><img src="img/facebookblck.png" alt="youtube" class="footer-somepicture"></a>
+                    <a href="https://www.facebook.com/myteamoment.by.pickwick/"><img src="img/facebookblck.png" alt="youtube" class="footer-somepicture"></a>
                 </div>
             </div>
         </div>

@@ -57,6 +57,7 @@ table {
     box-sizing: border-box;
 }
 /* Navigation bar styling */
+/* Code for navigation bar was originally made by Kevin Powell - I followed his tutorial */
 header {
     background: var(--background);
     text-align: center;
@@ -192,13 +193,19 @@ footer {
 }
 /* INDIVIDUAL PAGE STYLING + common styling */
 .home-body,
-.tea-body {
+.tea-body,
+.shop-body {
     margin: 0;
     background: var(--background);
     font-weight: 400;
 }
+.about-body,
+.contest-body {
+    margin: 0;
+}
 .home-white-background,
-.tea-white-background {
+.tea-white-background,
+.shop-white-background {
     clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
     background-color: #ffffff;
     width: 100%;
@@ -207,13 +214,20 @@ footer {
 }
 /* HOME page + common */
 .home-main,
-.tea-main {
+.tea-main,
+.shop-main,
+.about-main,
+.main-contest,
+.main-contact {
     margin-top: 6em;
 }
 .home-title-container,
 .tea-title-container {
     margin-bottom: 1em;
     padding-top: 2em;
+}
+.shop-image-container {
+    padding-top: 3em;
 }
 .home-title-container2 {
     display: none;
@@ -236,12 +250,14 @@ footer {
     text-align: center;
 }
 .home-image-container,
-.tea-image-container {
+.tea-image-container,
+.shop-image-container {
     display: flex;
     justify-content: center;
 }
 .home-pickwicktea,
-.tea-pickwicktea {
+.tea-pickwicktea,
+.shop-pickwicktea {
     width: 300px;
 }
 .home-button-container {
@@ -265,7 +281,8 @@ footer {
     box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.35);
     text-align: center;
 }
-.white-button-about {
+.white-button-about,
+#button {
     margin-top: 1em;
     text-decoration: none;
     font-family: filson-pro;
@@ -348,6 +365,7 @@ footer {
     height: 38em;
 }
 /* ACCORDION STYLING */
+/* Accordion (collapsible menu) code was created by Mark Caron. This version is recreation and development of it. */
 .accordion-container-main {
     margin: 2em 2em 4em 2em;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
@@ -372,7 +390,7 @@ footer {
     transition: height 0.3s ease;
 }
 .content {
-    background-color: #ccff66;
+    background-color: #bae95c;
 }
 .accordion > input[type="checkbox"]:checked ~ .content {
     height: auto;
@@ -392,14 +410,11 @@ footer {
     line-height: 1.2em;
 }
 .accordion label {
-    color: #333;
+    color: black;
     cursor: pointer;
     font-weight: normal;
     padding: 15px;
-    background: #ccff66;
-}
-.accordion label:hover {
-    background: #99cc33;
+    background: #bae95c;
 }
 .accordion .handle label:before {
     font-family: 'fontawesome';
@@ -420,6 +435,268 @@ footer {
 .accordion-content-text {
     font-family: circe;
     font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+.benefits-li {
+    list-style: inside;
+    margin-bottom: 1em;
+}
+/* FAQ accordion styling */
+#accordion-contact {
+    margin-bottom: 0.5em;
+}
+/* BUY NOW page styling */
+.shop-white-background {
+    height: 53em;
+}
+.amount-options-picker,
+.shipping-options-picker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.picker-info-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.7em;
+}
+.picker-info {
+    font-family: filson-pro;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+.availability-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+.tick {
+    width: 30px;
+    margin-right: 0.2em;
+}
+.tick-info {
+    font-family: filson-pro;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-left: 0.2em;
+}
+.reviews-headline {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.7em;
+}
+.stars-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.rating-star {
+    width: 35px;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+}
+.reviews {
+    text-decoration: none;
+    color: black;
+    font-family: filson-pro;
+    font-weight: 500;
+    font-size: 1.4em;
+}
+.amounts-heading,
+.accessories-heading {
+    text-align: center;
+    font-family: filson-pro;
+    font-weight: 700;
+    font-size: 1.7em;
+    color: #ffffff;
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+}
+.product-image {
+    width: 250px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.35);
+}
+.products-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.single-product {
+    margin-top: 2em;
+}
+.product-text1,
+.product-text2 {
+    text-align: center;
+    font-family: filson-pro;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+}
+.product-text2 {
+    font-size: 1em;
+}
+.checkout-button {
+    display: flex;
+    justify-content: center;
+}
+.form {
+    font-family: filson-pro;
+    font-weight: 500;
+    font-size: 1.2em;
+    border: 3px solid #99cc33;
+    background-color: #ffffff;
+}
+.option {
+    font-family: filson-pro;
+}
+#button {
+    margin-top: 1.5em;
+}
+.amounts,
+.accessories {
+    margin-bottom: 3em;
+}
+/* ABOUT PICKWICK page styling */
+.certificate {
+    width: 90px;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+}
+.certificates-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+.about-heading,
+.contest-heading,
+.contact-heading {
+    font-family: filson-pro;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 1.5em;
+    margin-bottom: 1em;
+}
+.about-subheading,
+.contest-subheading {
+    text-align: center;
+    font-family: filson-pro;
+    font-weight: 500;
+    font-size: 1.6em;
+    margin-bottom: 0.8em;
+}
+.common-text {
+    font-family: circe;
+    font-size: 1.1em;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+.about-content-section {
+    margin-bottom: 3em;
+}
+.about-link {
+    text-decoration: none;
+    color: #99cc33;
+}
+.about-pic {
+    width: 320px;
+}
+.about-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+/* CONTEST page styling */
+.contest-subheading1,
+.contest-subheading2 {
+    font-family: filson-pro;
+    font-weight: 700;
+    font-size: 1.7em;
+    text-align: center;
+}
+.contest-subheading2 {
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+.photocontest-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.contestant-image {
+    width: 300px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.contest-heading-img {
+    width: 200px;
+}
+.contest-image-heading {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+/* CONTACT page styling */
+.contacticon {
+    width: 45px;
+}
+.contact-firstsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+}
+.contact-icon-container {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.contacttext-info {
+    text-align: center;
+    font-family: filson-pro;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-top: 0.6em;
+    margin-bottom: 2em;
+}
+.contact-href,
+.contact-href-footer {
+    text-decoration: none;
+    color: black;
+}
+#faqlink {
+    text-decoration: none;
+    color: #7fb80d;
+}
+/* Contact GOOGLE MAPS styles */
+#gmap-canvas {
+    border: 0px;
+    overflow: unset;
+    margin: 0;
+    width: 360px;
+    height: 360px;
+    padding: 20px;
+    padding-top: 0;
+}
+.gmap-canvas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
 }
 /* DESKTOP STYLES */
 @media screen and (min-width:800px){
@@ -474,6 +751,11 @@ footer {
         grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
         grid-template-areas: 
             ". whiteimage whitebuttons .";
+    }
+    .home-white-background,
+    .tea-white-background,
+    .shop-white-background {
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     }
     .home-title-container {
         display: none;
@@ -544,7 +826,8 @@ footer {
     }
     .white-button-shop:hover,
     .white-button-about:hover,
-    .green-button-contest:hover {
+    .green-button-contest:hover,
+    #button:hover {
         box-shadow: 0.5px 0.5px 3px 1.5px lightslategray;
     }
     /* ACCORDION desktop */
@@ -558,16 +841,25 @@ footer {
         font-size: 1.5em;
         margin: 1em;
     }
+    .accordion label:hover {
+        background: #99cc33;
+    }
+    .content {
+        background-color: #ccff66;
+    }
+    .accordion label {
+        background: #ccff66;
+    }
     /* ABOUT TEA desktop */
     .tea-white-background {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        height: 37em;
+        height: 36em;
     }
     .tea-pickwicktea {
-        width: 45vw;
+        width: 43vw;
         margin-left: 3em;
         margin-right: 2em;
     }
@@ -582,5 +874,166 @@ footer {
     }
     .tea-description {
         font-size: 1.6vw;
+    }
+    .accordion-container-main {
+        margin-top: 3em;
+    }
+    /* BUY NOW desktop */
+    .shop-pickwicktea {
+        width: 450px;
+        margin-bottom: 2em;
+    }
+    .shop-white-background {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+        grid-template-areas:
+            ". shop1 shop2 .";
+    }
+    .shop-white-section1 {
+        grid-area: shop1;
+        align-self: center;
+    }
+    .shop-white-section2 {
+        grid-area: shop2;
+        align-self: center;
+    }
+    #button {
+        font-size: 1.5em;
+    }
+    .shop-main {
+        margin-top: 0;
+    }
+    .shop-image-container {
+        padding-top: 0;
+    }
+    .picker-info {
+        font-size: 1.5em;
+        padding-bottom: 0.3em;
+    }
+    .form {
+        font-size: 1.4em;
+        padding: 0.5em;
+        border: 3.5px solid #99cc33;
+    }
+    .rating-star {
+        width: 45px;
+    }
+    .reviews-headline {
+        margin-bottom: 1em;
+    }
+    .reviews:hover {
+        color: #99cc33;
+    }
+    .amounts-heading,
+    .accessories-heading {
+        text-align: left;
+        margin-left: 2em;
+        font-size: 2em;
+    } 
+    .products-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 5em;
+    } 
+    .product-image {
+        width: 400px;
+    }
+    .single-product {
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 1.2em;
+    }
+    .shop-green {
+        padding-top: 3em;
+    }
+    .product-text1 {
+        font-size: 1.5em;
+        margin-top: 0.8em;
+    }
+    .product-text2 {
+        font-size: 1.2em;
+    }
+    /* ABOUT PICKWICK desktop */
+    .about-heading,
+    .contest-heading,
+    .contact-heading {
+        font-size: 3.5em;
+        padding-top: 1.5em;
+    }
+    .about-subheading,
+    .contest-subheading {
+        font-size: 2.5em;
+    }
+    .common-text {
+        font-size: 1.5em;
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+    .certificate {
+        width: 150px;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .certificates-container {
+        margin-top: 3em;
+        margin-bottom: 5em;
+    }
+    .about-image {
+        display: none;
+    }
+    /* CONTEST desktop */
+    .contest-subheading1,
+    .contest-subheading2 {
+        font-size: 3em;
+    }
+    .contest-heading {
+        font-size: 4em;
+        margin-bottom: 0.6em;
+    }
+    .photocontest-container {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 3em;
+        margin-bottom: 4em;
+    }
+    .contestant-image {
+        width: 350px;
+        margin-left: 1em;
+        margin-right: 1em;
+        border-radius: 60% 40% 60% 40%;
+    }
+    .contest-heading-img {
+        display: none;
+    }
+    /* CONTACT desktop */
+    .contact-first-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-self: auto;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    .contact-text-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .contacttext-info {
+        margin: 0;
+        font-size: 1.6em;
+        margin-left: 1em;
+    }
+    .contact-href:hover {
+        color: #99cc33;
+    }
+    #gmap-canvas {
+        width: 1000px;
+        height: 500px;
+    }
+    .gmap-canvas {
+        margin-bottom: 6em;
     }
 }
